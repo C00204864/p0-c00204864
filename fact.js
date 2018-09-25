@@ -3,7 +3,7 @@
 
 var fact = function (num, check = true) {
   check = check === true;
-  if(typeof num !== "number"){
+  if(typeof num !== 'number'){
     return undefined;
   }
   else if(num < 0) {
@@ -17,6 +17,6 @@ var fact = function (num, check = true) {
   }
 }
 
-if ( typeof module !== "undefined" ) {
+if ( typeof module !== 'undefined' ) {
   module.exports = fact;
 }
