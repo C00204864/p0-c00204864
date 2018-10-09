@@ -3,7 +3,7 @@
 
 var fact = function (num, check = true) {
   check = check === true;
-  if(typeof num !== 'number'){
+  if(typeof num !== 'number' || isNaN(num)){
     return undefined;
   }
   else if(num < 0) {
